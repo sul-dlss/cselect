@@ -1,23 +1,24 @@
+
 <html>
   <head>
-    <title>cselect</title>    
+    <title>cselect</title>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/cselect.js"></script>
     <script type="text/javascript">
       $(function() {
 
         var jsonData = [
-          {              
+          {
             html: '<a href="javascript:console.log(0);">small</a> (109 x 150)'
-          }, {              
+          }, {
             html: '<a href="javascript:console.log(1);">medium</a> (217 x 299)'
-          }, {              
+          }, {
             html: '<a href="javascript:console.log(2);">large</a> (434 x 597)'
-          }, {              
+          }, {
             html: '<a href="javascript:console.log(3);">xlarge</a> (867 x 1193)'
-          }, {              
+          }, {
             html: '<a href="javascript:console.log(4);">full</a> (1734 x 2386)'
-          }, {              
+          }, {
             //selected: true,
             html: '<a href="javascript:console.log(5);">zoom</a>'
           }
@@ -27,29 +28,49 @@
           data: jsonData,
           width: 225,
           selectText: 'Select size',
-          //defaultSelectedIndex: 2,
+          defaultSelectedIndex: 2,
           onSelected: function(data) {
             //console.log(data);
           }
         });
 
       });
-    </script>        
-  </head>  
-  <body style="padding: 15px">    
+    </script>
+  </head>
+  <body style="padding: 15px">
+    <div style="font-size: 11px; width: 600px;">
+      <p>
+        Sed ullamcorper, risus a blandit pulvinar, mi erat sagittis eros, at ultrices mauris dui commodo ante. Aliquam fermentum,
+        libero quis dignissim malesuada, est nisl rutrum quam, quis bibendum massa erat quis risus. Cras augue lacus, tempor ullamcorper
+        dignissim at, varius in ipsum. Ut dignissim, mauris in lobortis tincidunt, felis ipsum pharetra massa, non consequat augue massa
+        eget mauris. Sed auctor pulvinar nisl nec accumsan. Aliquam et ligula nibh. Nam ac justo vel nunc dignissim aliquet. Morbi porttitor,
+        eros ac pretium semper, nibh magna eleifend urna, eget imperdiet neque massa at purus. Nullam convallis tortor quis lacus malesuada
+        id mattis quam condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed eros nibh, eu dictum tortor. Sed posuere
+        venenatis leo, quis porta nisi varius in. Aenean dapibus, risus at laoreet tempor, augue neque eleifend sem, vitae sagittis sem nunc
+        in eros. Curabitur faucibus nisl vel leo tempor pharetra. Sed blandit, nisi et consequat imperdiet, dolor ante vulputate arcu, a
+        blandit eros est non nulla.
+      </p>
+      <p>
+        Proin vel imperdiet augue. Integer malesuada lobortis nisi, quis hendrerit magna gravida mattis. Duis pretium suscipit felis a
+        rhoncus. Integer elementum euismod rutrum. Fusce tempor lorem vitae eros varius adipiscing. Cras justo sapien, faucibus at vulputate
+        quis, mattis id mi. Morbi laoreet dictum felis. Donec augue ante, pulvinar a hendrerit a, gravida et lectus. Morbi suscipit est sed
+        quam ullamcorper a mollis nibh posuere. Donec a condimentum nunc.
+      </p>
+    </div>
+    <br/>
     <div id="cs"></div>
     <br/>
     <div style="font-size: 11px; width: 600px;">
        <p>
-       Curabitur ac felis elit, sed euismod lacus. Morbi dictum lectus vel diam convallis adipiscing. Fusce euismod nulla et massa 
-       imperdiet et porta nunc consequat. Praesent accumsan, tellus a ultricies gravida, leo diam elementum ante, eu condimentum quam 
-       lectus a urna. Nam ac ultricies neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor eros sit amet 
-       est mollis egestas. Duis nec massa in dui posuere fermentum id ut dolor. Morbi augue nunc, pretium ac lobortis et, eleifend 
-       vitae dolor. 
+       Curabitur ac felis elit, sed euismod lacus. Morbi dictum lectus vel diam convallis adipiscing. Fusce euismod nulla et massa
+       imperdiet et porta nunc consequat. Praesent accumsan, tellus a ultricies gravida, leo diam elementum ante, eu condimentum quam
+       lectus a urna. Nam ac ultricies neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor eros sit amet
+       est mollis egestas. Duis nec massa in dui posuere fermentum id ut dolor. Morbi augue nunc, pretium ac lobortis et, eleifend
+       vitae dolor.
        </p><p>
-       Sed dapibus, dui at laoreet sollicitudin, orci urna pulvinar odio, vel malesuada mi dui in nulla. Sed sit amet nibh sed velit 
+       Sed dapibus, dui at laoreet sollicitudin, orci urna pulvinar odio, vel malesuada mi dui in nulla. Sed sit amet nibh sed velit
        sagittis dapibus. Donec cursus quam in dolor molestie sit amet imperdiet leo porttitor. In venenatis accumsan adipiscing.
        </p>
     </div>
-  </body>  
-</html>  
+  </body>
+</html>
